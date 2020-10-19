@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>Dashboard Template · Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/node_modules/bootstrap/examples/dashboard/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/node_modules/bootstrap/assets/img/favicons/apple-touch-icon.png"
+        sizes="180x180">
+    <link rel="icon" href="/node_modules/bootstrap/assets/img/favicons/favicon-32x32.png" sizes="32x32"
+        type="image/png">
+    <link rel="icon" href="/node_modules/bootstrap/assets/img/favicons/favicon-16x16.png" sizes="16x16"
+        type="image/png">
+    <link rel="manifest" href="/node_modules/bootstrap/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/node_modules/bootstrap/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+    <link rel="icon" href="/node_modules/bootstrap/assets/img/favicons/favicon.ico">
+    <meta name="msapplication-config" content="/node_modules/bootstrap/assets/img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#563d7c">
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .container {
+            padding-top: 10px;
+            margin-top: 20px;
+        }
+
+        .lh-condensed {
+            line-height: 1.25;
+        }
+
+        main div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* 水平居中 */
+            align-items: flex-start;
+            /* 垂直居中 */
+        }
+
+        form div {
+            padding-top: 5px;
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="/public/css/dashboard.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">Company name</a>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse"
+            data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+        <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
+                <a class="nav-link" href="#">Sign out</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+                <div class="sidebar-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                                <span data-feather="home"></span>
+                                Dashboard <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="file"></span>
+                                Orders
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="shopping-cart"></span>
+                                Products
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="users"></span>
+                                Customers
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="bar-chart-2"></span>
+                                Reports
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="layers"></span>
+                                Integrations
+                            </a>
+                        </li>
+                    </ul>
+
+                    <h6
+                        class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Saved reports</span>
+                        <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
+                            <span data-feather="plus-circle"></span>
+                        </a>
+                    </h6>
+                    <ul class="nav flex-column mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="file-text"></span>
+                                Current month
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="file-text"></span>
+                                Last quarter
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="file-text"></span>
+                                Social engagement
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="file-text"></span>
+                                Year-end sale
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+                <div class="container">
+
+                </div>
+                <h4 class="mb-3">修改内容</h4>
+                <form action="/dash/edit" method="post">
+                    <input type="hidden" name="id" value="{{value.id}}">
+                    <div class="mb-3">
+                        <label for="">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" value="{{value.name}}">
+                        <div class="invalid-feedback">
+                            Name required
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="gender">Gender</label>
+                        <select class="custom-select d-block w-100" id="gender" name="gender" required="">
+                            <option value="0">female</option>
+                            <option name="1">male</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid country.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="age">Age</label>
+                        <input type="number" class="form-control" id="age" value="{{value.age}}" required="" name="age">
+                        <div class="invalid-feedback">
+                            Age required
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="hobby">hobbies</label>
+                        <input type="text" class="form-control" id="hobbies" value="{{value.hobbies}}" required="" name="hobbies">
+                        <div class="invalid-feedback">
+                            Age required
+                        </div>
+                    </div>
+
+
+
+                    <!-- <div class="row">
+                        <div class="col-md-5 mb-3">
+                            <label for="country">Country</label>
+                            <select class="custom-select d-block w-100" id="country" required="">
+                                <option value="">Choose...</option>
+                                <option>United States</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid country.
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="state">State</label>
+                            <select class="custom-select d-block w-100" id="state" required="">
+                                <option value="">Choose...</option>
+                                <option>California</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please provide a valid state.
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="zip">Zip</label>
+                            <input type="text" class="form-control" id="zip" placeholder="" required="">
+                            <div class="invalid-feedback">
+                                Zip code required.
+                            </div>
+                        </div>
+                    </div> -->
+                    <hr class="mb-4">
+                    <label for="">Hobbies</label>
+                    <div class="custom-control custom-checkbox checkbox-inline">
+                        <input type="checkbox" class="custom-control-input" id="hob" name="java">
+                        <label class="custom-control-label" for="">Java</label>
+                    </div>
+                    <div class="custom-control custom-checkbox checkbox-inline">
+                        <input type="checkbox" class="custom-control-input" id="php" name="php">
+                        <label class="custom-control-label" for="">php</label>
+                    </div>
+                    <hr class="mb-4">
+                    <label class="radio-inline">
+                        <input type="radio" name="op1" id="inlineRadio1" value="option1"> 1
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="op2" id="inlineRadio2" value="option2"> 2
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="op3" id="inlineRadio3" value="option3"> 3
+                    </label>
+                    <hr class="mb-4">
+                    <button class="btn btn-primary btn-lg btn-block" type="submit">提交</button>
+        </div>
+
+        </form>
+
+
+
+        </main>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script>
+        window.jQuery || document.write(
+            '<script src="/node_modules/bootstrap/assets/js/vendor/jquery.slim.min.js"><\/script>')
+    </script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <script src="/public/js/dashboard.js"></script>
+</body>
+
+</html>
